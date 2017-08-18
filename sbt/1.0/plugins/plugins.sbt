@@ -1,0 +1,13 @@
+scalaVersion := "2.12.3"
+scalacOptions ++= Seq("-feature", "-language:postfixOps")
+resolvers += Resolver.url("sbt-plugin-snapshots", url("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-snapshots"))(Resolver.ivyStylePatterns)
+resolvers += Resolver.url("rtimush/sbt-plugin-snapshots", new URL("https://dl.bintray.com/rtimush/sbt-plugin-snapshots/"))(Resolver.ivyStylePatterns)
+addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.1")
+addSbtPlugin("net.vonbuchholtz" % "sbt-dependency-check" % "0.1.10")
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.2.2-RC2")
+addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.2.27")
+addSbtPlugin("io.spray" % "sbt-revolver" % "0.9.0")
+// addSbtPlugin("com.scalapenos" % "sbt-prompt" % "1.0.1")
+// addSbtPlugin("pl.project13.sbt" % "sbt-jol" % "0.1.3")
+// addSbtPlugin("org.ensime" % "sbt-ensime" % "1.12.14")
+// addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
